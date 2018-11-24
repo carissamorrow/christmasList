@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Christmas List</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<h1 class="header">My Christmas List</h1>
+
+<body id="body" class="large">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="list" class="col-sm-12 text">
+        <form onsubmit="app.controllers.listController.addListFromForm(event)">
+          <input type="text" name="description" placeholder="New Product I Want" required>
+          <button type="submit">Submit</button>
+        </form>
+        <ul id="wish-list"></ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script type='module' src="app/main.js"></script>
+
+</body>
+
+</html>

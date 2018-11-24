@@ -1,0 +1,17 @@
+.header {
+  background-color: rgb(252, 216, 234);
+  font-size: 50px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 40px
+}
+body {
+    width:100%;
+    height: 900px;
+    background-image: url('https://www.publicdomainpictures.net/pictures/70000/nahled/white-christmas-ball-1386606023ECA.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: bold;
+}
