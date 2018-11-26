@@ -8,11 +8,11 @@ function getLists() {
 
 function draw(_lists) {
   let template = `<div>totalLists: ${_lists.length}</div>`
-  _lists.forEach(_lists => {
+  _lists.forEach(item => {
     template += `
-    <input checkbox class="box" type="checkbox" ${_lists.completed ? "checked" : ''} onsubmit="app.controllers.listController('${_lists.productName}')" <h5>Check Box If Purchased</h5>
-				<p class="boxes">List: ${_lists.productName}</p>
-				<button type="button" onclick="app.controllers.listController.delete('${_lists._id}')">Delete</button>
+    <input checkbox class="box" type="checkbox" ${item.completed ? "checked" : ''} onsubmit="app.controllers.listController('${item.productName}')" <h5>Check Box If Purchased</h5>
+				<p class="boxes">List: ${item.description}</p>
+				<button type="button" onclick="app.controllers.listController.delete('${item._id}')">Delete</button>
 				</div>
     `
   })
