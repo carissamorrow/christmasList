@@ -42,7 +42,7 @@ router.post('/', (req, res, next) => {
 })
 
 
-router.put('/:listId', (req, res, next) => {
+router.put('/:id', (req, res, next) => {
   List.findByIdAndUpdate(req.params.listId, req.body, { new: true })
     .then(list => {
       res.send(list)
